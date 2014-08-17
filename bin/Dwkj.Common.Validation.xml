@@ -1,0 +1,224 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Dwkj.Common.Validation</name>
+    </assembly>
+    <members>
+        <member name="T:Dwkj.Common.Validation.ValidateHelper">
+            <summary>
+            页面数据校验类
+            </summary>
+        </member>
+        <member name="M:Dwkj.Common.Validation.ValidateHelper.IsNull(System.String)">
+            <summary>
+            检查字符串是否为空字符串
+            </summary>
+            <param name="inputData">输入字符串</param>
+            <returns></returns>
+        </member>
+        <member name="M:Dwkj.Common.Validation.ValidateHelper.IsNumber(System.String)">
+            <summary>
+            是否数字字符串
+            </summary>
+            <param name="inputData">输入字符串</param>
+            <returns></returns>
+        </member>
+        <member name="M:Dwkj.Common.Validation.ValidateHelper.IsNumber(System.String,System.Int32)">
+            <summary>
+            是否数字字符串，或者返回默认值
+            </summary>
+            <param name="inputData">输入字符串</param>
+            <param name="defaultValue">验证失败时返回默认值</param>
+            <returns></returns>
+        </member>
+        <member name="M:Dwkj.Common.Validation.ValidateHelper.IsNumberSign(System.String)">
+            <summary>
+            是否数字字符串 可带正负号
+            </summary>
+            <param name="inputData">输入字符串</param>
+            <returns></returns>
+        </member>
+        <member name="M:Dwkj.Common.Validation.ValidateHelper.IsNumberSign(System.String,System.Int32)">
+            <summary>
+            是否数字字符串 可带正负号
+            </summary>
+            <param name="inputData">输入字符串</param>
+            <param name="defaultValue">验证失败时返回默认值</param>
+            <returns></returns>
+        </member>
+        <member name="M:Dwkj.Common.Validation.ValidateHelper.IsDecimal(System.String)">
+            <summary>
+            是否是浮点数
+            </summary>
+            <param name="inputData">输入字符串</param>
+            <returns></returns>
+        </member>
+        <member name="M:Dwkj.Common.Validation.ValidateHelper.IsDecimal(System.String,System.Single)">
+            <summary>
+            是否是浮点数
+            </summary>
+            <param name="inputData">输入字符串</param>
+            <param name="defaultValue">验证失败时返回默认值</param>
+            <returns></returns>
+        </member>
+        <member name="M:Dwkj.Common.Validation.ValidateHelper.IsDecimalSign(System.String)">
+            <summary>
+            是否是浮点数 可带正负号,/等价于^[+-]?[0-9]+[.]?[0-9]+$
+            </summary>
+            <param name="inputData">输入字符串</param>
+            <returns></returns>
+        </member>
+        <member name="M:Dwkj.Common.Validation.ValidateHelper.IsDecimalSign(System.String,System.Single)">
+            <summary>
+            是否是浮点数 可带正负号,/等价于^[+-]?[0-9]+[.]?[0-9]+$
+            </summary>
+            <param name="inputData">输入字符串</param>
+            <param name="defaultValue">验证失败时返回默认值</param>
+            <returns></returns>
+        </member>
+        <member name="M:Dwkj.Common.Validation.ValidateHelper.IsPositiveNumber(System.String)">
+            <summary>
+            是否是正整数
+            </summary>
+            <param name="inputData">输入字符串</param>
+            <returns></returns>
+        </member>
+        <member name="M:Dwkj.Common.Validation.ValidateHelper.IsPositiveNumber(System.String,System.Int32)">
+            <summary>
+            是否是正整数
+            </summary>
+            <param name="inputData">输入字符串</param>
+            <param name="defaultValue">验证失败时返回默认值</param>
+            <returns></returns>
+        </member>
+        <member name="M:Dwkj.Common.Validation.ValidateHelper.IsPositiveNumberWithZero(System.String)">
+            <summary>
+            是否是非负整数（正整数 + 0）
+            </summary>
+            <param name="inputData">输入字符串</param>
+            <returns></returns>
+        </member>
+        <member name="M:Dwkj.Common.Validation.ValidateHelper.IsPositiveNumberWithZero(System.String,System.Int32)">
+            <summary>
+            是否是非负整数（正整数 + 0）
+            </summary>
+            <param name="inputData">输入字符串</param>
+            <param name="defaultValue">验证失败时返回默认值</param>
+            <returns></returns>
+        </member>
+        <member name="M:Dwkj.Common.Validation.ValidateHelper.IsHasCHZN(System.String)">
+            <summary>
+            检测是否有中文字符
+            </summary>
+            <param name="inputData"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Dwkj.Common.Validation.ValidateHelper.IsEmail(System.String)">
+            <summary>
+            是否为邮件地址
+            </summary>
+            <param name="inputData">输入字符串</param>
+            <returns></returns>
+        </member>
+        <member name="M:Dwkj.Common.Validation.ValidateHelper.IsURL(System.String)">
+            <summary>
+            是否为URL地址
+            </summary>
+            <param name="inputData"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Dwkj.Common.Validation.ValidateHelper.IsTelephone(System.String)">
+            <summary>
+            是否匹配国内电话号码,匹配形式如 0511-4405222 或 021-87888822
+            </summary>
+            <param name="inputData">输入字符串</param>
+            <returns></returns>
+        </member>
+        <member name="M:Dwkj.Common.Validation.ValidateHelper.IsQQ(System.String)">
+            <summary>
+            是否匹配腾讯QQ号从10000开始
+            </summary>
+            <param name="inputData">输入字符串</param>
+            <returns></returns>
+        </member>
+        <member name="M:Dwkj.Common.Validation.ValidateHelper.IsPostalcode(System.String)">
+            <summary>
+            是否匹配中国邮政编码
+            </summary>
+            <param name="inputData">输入字符串</param>
+            <returns></returns>
+        </member>
+        <member name="M:Dwkj.Common.Validation.ValidateHelper.IsIPaddress(System.String)">
+            <summary>
+            是否匹配ip地址
+            </summary>
+            <param name="inputData">输入字符串</param>
+            <returns></returns>
+        </member>
+        <member name="M:Dwkj.Common.Validation.ValidateHelper.IsIDcard(System.String)">
+            <summary>
+            是否匹配身份证
+            </summary>
+            <param name="inputData">输入字符串</param>
+            <returns></returns>
+        </member>
+        <member name="M:Dwkj.Common.Validation.ValidateHelper.IsDoubleChar(System.String)">
+            <summary>
+            是否匹配双字节字符(包括汉字在内),可以用来计算字符串的长度（一个双字节字符长度计2，ASCII字符计1）
+            </summary>
+            <param name="inputData">输入字符串</param>
+            <returns></returns>
+        </member>
+        <member name="M:Dwkj.Common.Validation.ValidateHelper.IsBlankLine(System.String)">
+            <summary>
+            是否匹配空行
+            </summary>
+            <param name="inputData">输入字符串</param>
+            <returns></returns>
+        </member>
+        <member name="M:Dwkj.Common.Validation.ValidateHelper.IsHTMLTag(System.String)">
+            <summary>
+             匹配HTML标记
+            </summary>
+            <param name="inputData">输入字符串</param>
+            <returns></returns>
+        </member>
+        <member name="M:Dwkj.Common.Validation.ValidateHelper.IsGuid(System.String)">
+            <summary>
+            检测是否是GUID
+            </summary>
+            <param name="inputData"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Dwkj.Common.Validation.ValidateHelper.IsGuid(System.String,System.Guid)">
+            <summary>
+            检测是否是GUID，返回默认值
+            </summary>
+            <param name="inputData"></param>
+            <param name="defaultValue">验证为空时的默认值</param>
+            <returns></returns>
+        </member>
+        <member name="M:Dwkj.Common.Validation.ValidateHelper.IsDateTime(System.String)">
+            <summary>
+            检测是否是日期格式
+            </summary>
+            <returns></returns>			
+        </member>
+        <member name="M:Dwkj.Common.Validation.ValidateHelper.IsDateTime(System.String,System.DateTime)">
+            <summary>
+            检测是否是日期格式
+            </summary>
+            <param name="inputData"></param>
+            <param name="defaultValue">验证为空时的默认值</param>
+            <returns></returns>			
+        </member>
+        <member name="M:Dwkj.Common.Validation.ValidateHelper.SqlText(System.String,System.Int32)">
+            <summary>
+            检查字符串最大长度，返回指定长度的串
+            </summary>
+            <param name="sqlInput">输入字符串</param>
+            <param name="maxLength">最大长度</param>
+            <returns></returns>			
+        </member>
+    </members>
+</doc>

@@ -1,0 +1,8 @@
+D:\Code\Mapping\WeChat\WeChat\WeChat\bin\WeChat.dll
+D:\Code\Mapping\WeChat\WeChat\WeChat\bin\WeChat.pdb
+D:\Code\Mapping\WeChat\WeChat\WeChat\bin\Dwkj.Common.Validation.dll
+D:\Code\Mapping\WeChat\WeChat\WeChat\bin\Senparc.Weixin.MP.dll
+D:\Code\Mapping\WeChat\WeChat\WeChat\bin\Dwkj.Common.Validation.pdb
+D:\Code\Mapping\WeChat\WeChat\WeChat\bin\Dwkj.Common.Validation.xml
+D:\Code\Mapping\WeChat\WeChat\WeChat\obj\Debug\WeChat.dll
+D:\Code\Mapping\WeChat\WeChat\WeChat\obj\Debug\WeChat.pdb
